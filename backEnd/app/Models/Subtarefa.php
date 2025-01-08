@@ -15,7 +15,6 @@ class Subtarefa extends Model
         'tarefa_id'
     ];
 
-    // Relacionamento com a tarefa principal
     public function task()
     {
         return $this->belongsTo(Tarefa::class);

@@ -14,7 +14,6 @@ class Tarefa extends Model
         'concluido_em'
     ];
 
-    // Caso você queira uma relação com as subtarefas
     public function subtasks()
     {
         return $this->hasMany(Subtarefa::class);
